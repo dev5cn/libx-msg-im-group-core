@@ -108,6 +108,7 @@ shared_ptr<XscTcpCfg> XmsgImGroupCfg::xscServerCfg()
 	tcpCfg->tracing = this->cfgPb->xsctcpcfg().tracing();
 	tcpCfg->heartbeat = this->cfgPb->xsctcpcfg().heartbeat();
 	tcpCfg->n2hZombie = this->cfgPb->xsctcpcfg().n2hzombie();
+	tcpCfg->n2hTransTimeout = this->cfgPb->xsctcpcfg().n2htranstimeout();
 	tcpCfg->n2hTracing = this->cfgPb->xsctcpcfg().n2htracing();
 	tcpCfg->h2nReConn = this->cfgPb->xsctcpcfg().h2nreconn();
 	tcpCfg->h2nTransTimeout = this->cfgPb->xsctcpcfg().h2ntranstimeout();
